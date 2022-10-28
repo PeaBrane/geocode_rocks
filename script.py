@@ -59,7 +59,7 @@ def build_df(df, votes, boulder=True):
     return pandas.DataFrame(data={'Route': routes, 'Location': locations, 'Latitude': latitudes, 'Longitude': longitudes, 'URL': urls})
 
 
-def process_routes(filename, vote_threshold=2, vote_split=10, boulder=True):
+def process_problems(filename, vote_threshold=2, vote_split=10, boulder=True):
     """processes the problems and group them into boulders/crags based on spatial similarity
 
     Args:
@@ -87,4 +87,4 @@ def process_routes(filename, vote_threshold=2, vote_split=10, boulder=True):
 filenames = ['jtree_boulders.csv']
 filenames = [os.path.join('data', filename) for filename in filenames]
 for filename in filenames:
-    process_routes(filename)
+    process_problems(filename)
