@@ -1,3 +1,0 @@
-*/*.csv
-!data/bc_boulders.csv
-!data/bc_boulders_processed.csv
