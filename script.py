@@ -6,13 +6,13 @@ from urllib import request
 from bs4 import BeautifulSoup
 
 import re
-from tqdm import tqdm
+from rich.progress import track
 
 
 def get_votes(df: pd.DataFrame):
     
     votes = []
-    for index in tqdm(range(len(df))):
+    for index in track(range(len(df))):
         url = df['URL'].iloc[index]
         response = request.urlopen(url)
         soup = BeautifulSoup(response.read(), 'html.parser')
