@@ -1,60 +1,72 @@
-Route,Location,Latitude,Longitude,URL
-"Emerald City (V0 PG13 3.8 77) 
- Tri-Nitro-Toulumne (V3 PG13 3.5 28) 
- Problem B (V1 R 2.6 5) 
- Problem A (V0 2.4 5)",Emerald City,33.81759,-116.64934,https://www.mountainproject.com/route/107176656/emerald-city
-"Frank's Roof (V3 3.0 105) 
- The Terminator (V2 2.3 89) 
- Frank's Problem (V4 2.9 44) 
- Frank's Direct (V3 2.3 20) 
- Short Sloper Traverse (V4 2.5 13) 
- Frank's Problem (variation) (V2 2.4 11)",Frank's Boulder,33.81241,-116.64602,https://www.mountainproject.com/route/106228976/franks-roof
-"Hueco Shuffle (V1 3.0 130) 
- Waltz (V1 2.1 44) 
- Breakdance (V3 2.4 28) 
- Hueco Shuffle - Left (V2+ 2.5 12) 
- La Bocha de  Boogy (V3 2.1 19) 
- Samba (V2+ 1.6 14) 
+Route,Location,Latitude,Longitude,URL,votes_most_log
+"Emerald City (V0 PG13 3.8 84) 
+ Tri-Nitro-Toulumne (V3 PG13 3.5 31) 
+ Problem B (V1 R 2.6 6) 
+ Problem A (V0 2.4 6)",Emerald City,33.81759,-116.64934,https://www.mountainproject.com/route/107176656/emerald-city,1.9242792860618816
+"Frank's Roof (V3 3.0 106) 
+ The Terminator (V2 2.3 93) 
+ Frank's Problem (V4 2.9 49) 
+ Frank's Direct (V3 2.3 23) 
+ Short Sloper Traverse (V4 2.5 14) 
+ Frank's Problem (variation) (V2 2.4 11)",Frank's Boulder,33.81241,-116.64602,https://www.mountainproject.com/route/106228976/franks-roof,2.0253058652647704
+"Hueco Shuffle (V1 3.0 138) 
+ Waltz (V1 2.1 46) 
+ Breakdance (V3 2.4 30) 
+ Hueco Shuffle - Left (V2+ 2.5 14) 
+ La Bocha de  Boogy (V3 2.1 20) 
+ Samba (V2+ 1.6 15) 
  Hueco Shuffle - Direct (V3 2.0 6) 
- Problem B (V2 2.0 2) 
- Last Man Standing (V2 1.5 4)",Hueco Boulder,33.8159,-116.64911,https://www.mountainproject.com/route/106505709/hueco-shuffle
-White Flight (V3- PG13 3.7 61),White Flight Boulder,33.81366,-116.64963,https://www.mountainproject.com/route/107674829/white-flight
-Standing on the Head of the Dragon (V4 3.6 60),Dragon's Head,33.81363,-116.65063,https://www.mountainproject.com/route/105997111/standing-on-the-head-of-the-dragon
-"Paul Rocks (V4- 2.6 101) 
- Paul's Cock (V3- 1.3 20) 
- Paul's Cock Rocks (V3 2.0 2)",Paul's Rock,33.81671,-116.64839,https://www.mountainproject.com/route/106832285/paul-rocks
-Sunshine Daydream (aka Yo Picasso) (V4 3.7 55),Sunshine Daydream Boulder,33.81537,-116.65012,https://www.mountainproject.com/route/106492551/sunshine-daydream-aka-yo-picasso
-"Line Dance (V1+ 2.3 77) 
- Square Dance (V4- 2.1 32) 
+ Problem B (V2 2.0 3) 
+ The Crusty Crab (V3 2.0 1) 
+ Split (V3 2.0 1) 
+ Last Man Standing (V2 1.5 5) 
+ Problem C (V0 1.0 2) 
+ Problem A (V0 1.0 1) 
+ Problem A (V2 1.0 1)",Hueco Boulder,33.8159,-116.64911,https://www.mountainproject.com/route/106505709/hueco-shuffle,2.1398790864012365
+"White Flight (V3- PG13 3.7 63) 
+ Poorman's Facet Arête (V4 1.0 1)",White Flight Boulder,33.81366,-116.64963,https://www.mountainproject.com/route/107674829/white-flight,1.7993405494535817
+Standing on the Head of the Dragon (V4 3.6 63),Dragon's Head,33.81363,-116.65063,https://www.mountainproject.com/route/105997111/standing-on-the-head-of-the-dragon,1.7993405494535817
+"Paul Rocks (V4- 2.6 104) 
+ Paul's Cock (V3- 1.3 21) 
+ Paul's Cock Rocks (V3 2.0 2)",Paul's Rock,33.81671,-116.64839,https://www.mountainproject.com/route/106832285/paul-rocks,2.0170333392987803
+Sunshine Daydream (aka Yo Picasso) (V4 3.7 56),Sunshine Daydream Boulder,33.81537,-116.65012,https://www.mountainproject.com/route/106492551/sunshine-daydream-aka-yo-picasso,1.7481880270062005
+"Line Dance (V1+ 2.3 83) 
+ Square Dance (V4- 2.1 34) 
  Busta Move (V4 1.8 9) 
- Act of Contrivance (V4 2.0 2)",Swing Dance Boulder,33.81573,-116.64921,https://www.mountainproject.com/route/106832039/line-dance
-"Buck Rogers (V2 2.5 52) 
- Flash Gordon (V3 2.0 45) 
- Buck Rodgers Variation (V3 2.1 13) 
- Space Crack (V1 1.6 15)",Flash Gordon Boulder,33.81345,-116.64506,https://www.mountainproject.com/route/106226186/buck-rogers
-"Illuminatrix (V4 PG13 4.0 21) 
- All Seeing Eye of the Great Architect of the Universe (V2 2.9 24)",Conspiracy Boulder,33.81806,-116.64637,https://www.mountainproject.com/route/108240960/illuminatrix
-Humpin' the Walrus (V4 2.9 38),Walrus Boulder,33.81594,-116.64914,https://www.mountainproject.com/route/109141480/humpin-the-walrus
-"Trailside Tango (V4 2.5 47) 
+ Act of Contrivance (V4 2.0 2)",Swing Dance Boulder,33.81573,-116.64921,https://www.mountainproject.com/route/106832039/line-dance,1.919078092376074
+"Buck Rogers (V2 2.5 54) 
+ Flash Gordon (V3 2.0 49) 
+ Buck Rodgers Variation (V3 2.1 14) 
+ Space Crack (V1 1.6 15)",Flash Gordon Boulder,33.81345,-116.64506,https://www.mountainproject.com/route/106226186/buck-rogers,1.7323937598229686
+"Illuminatrix (V4 PG13 4.0 22) 
+ All Seeing Eye of the Great Architect of the Universe (V2 2.9 24)",Conspiracy Boulder,33.81806,-116.64637,https://www.mountainproject.com/route/108240960/illuminatrix,1.3424226808222062
+Humpin' the Walrus (V4 2.9 40),Walrus Boulder,33.81594,-116.64914,https://www.mountainproject.com/route/109141480/humpin-the-walrus,1.6020599913279625
+"Trailside Tango (V4 2.5 48) 
  Trail Rail (V1 2.1 35) 
- Tourist Zone (V0+ 1.6 25) 
- Tourist Trophy (V-easy 1.5 24) 
+ Tourist Zone (V0+ 1.6 27) 
+ Tourist Trophy (V-easy 1.5 26) 
  Tourist Remover (V3+ 1.9 13) 
+ Tourist Slab (V-easy 2.0 1) 
  Just Another Trailside Attraction (V4 1.4 7) 
- CMMRP (V2- 0.5 2)",Ranger Station Rock 3,33.81273,-116.64341,https://www.mountainproject.com/route/106226116/trailside-tango
-"March Arete (V2+ 2.8 39) 
- March Madness (V1 R 1.3 3)",March Boulder,33.81388,-116.64844,https://www.mountainproject.com/route/106485860/march-arete
-Feel's like a Virgin (V3 R 3.6 18),Boulder Cluster,33.81425,-116.64769,https://www.mountainproject.com/route/108190840/feels-like-a-virgin
-"Shades of the Oldschool (V2 R 3.7 16) 
- Green Tea Arête (V4 3.0 4)",Green Tea Boulder,33.81393,-116.64932,https://www.mountainproject.com/route/107674913/shades-of-the-oldschool
-"Sea of Tranquility (V1 R 2.9 27) 
- Serpentine Ridge (V0- R 2.4 10) 
- Oceanus (V-easy PG13 2.3 12)",Moon Boulder,33.81351,-116.6451,https://www.mountainproject.com/route/107746032/sea-of-tranquility
+ CMMRP (V2- 0.5 2)",Ranger Station Rock 3,33.81273,-116.64341,https://www.mountainproject.com/route/106226116/trailside-tango,1.6812412373755872
+"March Arete (V2+ 2.8 41) 
+ March Madness (V1 R 1.3 4)",March Boulder,33.81388,-116.64844,https://www.mountainproject.com/route/106485860/march-arete,1.6127838567197355
+Feel's like a Virgin (V3 R 3.6 21),Boulder Cluster,33.81425,-116.64769,https://www.mountainproject.com/route/108190840/feels-like-a-virgin,1.3222192947339193
+"Shades of the Oldschool (V2 R 3.7 17) 
+ Green Tea Arête (V4 3.0 4)",Green Tea Boulder,33.81393,-116.64932,https://www.mountainproject.com/route/107674913/shades-of-the-oldschool,1.2304489213782739
+"Sea of Tranquility (V1 R 2.9 28) 
+ Serpentine Ridge (V0- R 2.4 11) 
+ Oceanus (V-easy PG13 2.3 13)",Moon Boulder,33.81351,-116.6451,https://www.mountainproject.com/route/107746032/sea-of-tranquility,1.4471580313422192
 "Ride the Lightning (V0+ R 3.7 7) 
- British Rail (V4 3.0 3) 
+ British Rail (V4 3.0 4) 
  The Green Room (V2 2.3 3) 
  The Wormhole (V3 2.0 2) 
  Vulpecula (V2 2.0 2) 
+ Colonel Angus (V3 2.0 1) 
+ Colonel Angus Left (V0 2.0 1) 
+ Jug or Not (V4+ 2.0 1) 
+ Unknown (V3+ 2.0 1) 
+ Knobby Face (V2-3 2.0 1) 
  Ricks Dyno (V2 1.5 2) 
  Gemini (V-easy 1.5 2) 
  Entropy (V1 1.5 2) 
@@ -64,60 +76,72 @@ Feel's like a Virgin (V3 R 3.6 18),Boulder Cluster,33.81425,-116.64769,https://w
  Pietra Dura (V-easy 1.0 2) 
  Cepheus (V2 1.0 2) 
  Messylepica (V0 1.0 2) 
- The Longest Barrel Ride (V3 1.0 2)",Lightning Boulder,33.82028,-116.63663,https://www.mountainproject.com/route/105997125/ride-the-lightning
-Black Moon (V3 R 3.6 8),Black Moon Boulder,33.81241,-116.6457,https://www.mountainproject.com/route/108978322/black-moon
-Space Wrangler (V4 3.3 12),Space Wrangler,33.81302,-116.63946,https://www.mountainproject.com/route/111992808/space-wrangler
-"Tetrys (V1 2.8 24) 
- Tetrys Right (V2 2.7 18)",Tetrys Boulder,33.81464,-116.6519,https://www.mountainproject.com/route/106499166/tetrys
-"Glass Traverse (V-easy 2.9 20) 
+ The Longest Barrel Ride (V3 1.0 2) 
+ Ricki Ticki (V4 1.0 1) 
+ Daddy's Little Helper (V1 1.0 1)",Lightning Boulder,33.82028,-116.63663,https://www.mountainproject.com/route/105997125/ride-the-lightning,0.8450980400142568
+"Black Moon (V3 R 3.6 8) 
+ Da Way (V3 3.0 1) 
+ Tram Pirates (V3 -1.0 0) 
+ Unnamed  V2 (V2 -1.0 0)",Black Moon Boulder,33.81241,-116.6457,https://www.mountainproject.com/route/108978322/black-moon,0.9030899869919435
+Space Wrangler (V4 3.3 14),Space Wrangler,33.81302,-116.63946,https://www.mountainproject.com/route/111992808/space-wrangler,1.146128035678238
+"Tetrys (V1 2.8 27) 
+ Tetrys Right (V2 2.7 20)",Tetrys Boulder,33.81464,-116.6519,https://www.mountainproject.com/route/106499166/tetrys,1.4313637641589874
+"Glass Traverse (V-easy 2.9 21) 
  Glass Direct (V0 2.6 19) 
  Glass Indirect (V2 2.6 16) 
- Heart of Glass (V-easy 2.1 8) 
- Glass Jugs (V-easy 2.2 6) 
- Glass Slippers (V4 1.9 10)",Glass Boulder,33.81722,-116.64884,https://www.mountainproject.com/route/106859688/glass-traverse
-Obe Problem Direct (V3-4 3.0 17),Obe Boulder,33.81725,-116.64806,https://www.mountainproject.com/route/107697623/obe-problem-direct
+ Heart of Glass (V-easy 2.1 9) 
+ Glass Jugs (V-easy 2.2 7) 
+ Glass Slippers (V4 1.9 12)",Glass Boulder,33.81722,-116.64884,https://www.mountainproject.com/route/106859688/glass-traverse,1.3222192947339193
+Obe Problem Direct (V3-4 3.0 18),Obe Boulder,33.81725,-116.64806,https://www.mountainproject.com/route/107697623/obe-problem-direct,1.255272505103306
 "Velvet Fog (V3 3.0 17) 
- Marc's Variation (V4 2.5 2)",Velvet Fog boulder,33.8151,-116.65088,https://www.mountainproject.com/route/107218954/velvet-fog
-"Black Cauldron (V4 2.8 20) 
- Black Prince (V3- 2.3 28)",Black Cauldron Boulder,33.81072,-116.64721,https://www.mountainproject.com/route/106200545/black-cauldron
-The Honey Pots (V2 2.7 22),Vanishing Point Boulder,33.81442,-116.64229,https://www.mountainproject.com/route/107674966/the-honey-pots
+ Marc's Variation (V4 2.5 2) 
+ Unnamed (V4 2.0 1)",Velvet Fog boulder,33.8151,-116.65088,https://www.mountainproject.com/route/107218954/velvet-fog,1.2304489213782739
+"Black Cauldron (V4 2.8 21) 
+ Black Prince (V3- 2.3 28)",Black Cauldron Boulder,33.81072,-116.64721,https://www.mountainproject.com/route/106200545/black-cauldron,1.3222192947339193
+The Honey Pots (V2 2.7 22),Vanishing Point Boulder,33.81442,-116.64229,https://www.mountainproject.com/route/107674966/the-honey-pots,1.3424226808222062
 "Center Crack (V0 2.5 22) 
  Dyno Problem (V2 1.9 10) 
  Chimney Rock Traverse (V3 2.0 4) 
- Right Arête (V1 1.6 7)",Chimney Rock,33.81364,-116.64148,https://www.mountainproject.com/route/107674938/center-crack
-Railer (V3 2.5 21),Railer Boulder,33.81751,-116.64752,https://www.mountainproject.com/route/107215850/railer
-Ceramic Salamander (V4 3.1 10),Salamander Boulder,33.81899,-116.65024,https://www.mountainproject.com/route/108405138/ceramic-salamander
-"Propane (V2 1.9 32) 
- Methane Direct (V4 2.0 5)",Methane Boulder,33.81669,-116.64831,https://www.mountainproject.com/route/107241969/propane
+ Moldy Cheese (V2 2.0 1) 
+ Highball Jugs (V0 R 2.0 1) 
+ Right Arête (V1 1.6 7)",Chimney Rock,33.81364,-116.64148,https://www.mountainproject.com/route/107674938/center-crack,1.3424226808222062
+Railer (V3 2.5 22),Railer Boulder,33.81751,-116.64752,https://www.mountainproject.com/route/107215850/railer,1.3424226808222062
+Ceramic Salamander (V4 3.1 11),Salamander Boulder,33.81899,-116.65024,https://www.mountainproject.com/route/108405138/ceramic-salamander,1.041392685158225
+"Propane (V2 1.9 34) 
+ Methane Direct (V4 2.0 6)",Methane Boulder,33.81669,-116.64831,https://www.mountainproject.com/route/107241969/propane,1.5314789170422551
 "Roof Jugs (V2 2.9 12) 
- Roof Jugs Variation (V3 2.7 11)",Roof Jugs,33.81779,-116.64914,https://www.mountainproject.com/route/110298396/roof-jugs
-Morgan Crack (V0 PG13 3.0 9),Morgan Crack Boulder,33.81621,-116.64892,https://www.mountainproject.com/route/111899941/morgan-crack
-"Game of Death (V4 2.9 10) 
- Raspoutine (V2 2.0 2)",Game of Death Boulder,33.81175,-116.6484,https://www.mountainproject.com/route/106495150/game-of-death
+ Roof Jugs Variation (V3 2.7 11)",Roof Jugs,33.81779,-116.64914,https://www.mountainproject.com/route/110298396/roof-jugs,1.0791812460476249
+Morgan Crack (V0 PG13 3.0 9),Morgan Crack Boulder,33.81621,-116.64892,https://www.mountainproject.com/route/111899941/morgan-crack,0.9542425094393249
+"Game of Death (V4 2.9 11) 
+ Raspoutine (V2 2.0 2) 
+ Le Mantel (V1 -1.0 0)",Game of Death Boulder,33.81175,-116.6484,https://www.mountainproject.com/route/106495150/game-of-death,1.041392685158225
 "Unknown (V4 3.0 6) 
  Atlas (V3 2.7 3) 
  Pleione (V2 2.4 5) 
+ Plank Walk (V4 2.0 1) 
+ Unnamed V3 (V3 2.0 1) 
  Alcyone (V0- 1.7 6) 
  Center (V1 1.8 4) 
- Left (V1 1.6 5)",Tuna Juice Area,33.81271,-116.64176,https://www.mountainproject.com/route/108090959/unknown
-"Slab Problem (V1 2.1 24) 
+ Left (V1 1.6 5)",Tuna Juice Area,33.81271,-116.64176,https://www.mountainproject.com/route/108090959/unknown,0.7781512503836436
+"Slab Problem (V1 2.1 25) 
  Side Show (V4+ 2.7 3) 
  Tourist Treat (V0 1.6 10) 
  Tourist Trap (V0+ 1.6 5) 
  Da Block (V4 1.5 2) 
- Trailside Traverse (V-easy 1.3 4)",Ranger Station Rock  2,33.81281,-116.64336,https://www.mountainproject.com/route/106190060/slab-problem
-"Slabarific (V1 2.6 13) 
- Slabalicious (V2 1.0 3)",Slab Boulder,33.81615,-116.64779,https://www.mountainproject.com/route/106922338/slabarific
-"Tram Pass (V2-3 2.0 25) 
- Reverse Traverse (V4 2.2 9)",Tram Boulder,33.81678,-116.64791,https://www.mountainproject.com/route/106832311/tram-pass
-Blacktop (V4 3.0 7),Blacktop Boulder,33.81269,-116.64687,https://www.mountainproject.com/route/107901552/blacktop
-"Take a Chance On Me (V1-2 2.1 24) 
+ Trailside Traverse (V-easy 1.3 4)",Ranger Station Rock  2,33.81281,-116.64336,https://www.mountainproject.com/route/106190060/slab-problem,1.3979400086720377
+"Slabarific (V1 2.6 15) 
+ Slabalicious (V2 1.0 3)",Slab Boulder,33.81615,-116.64779,https://www.mountainproject.com/route/106922338/slabarific,1.1760912590556813
+"Tram Pass (V2-3 2.0 27) 
+ Reverse Traverse (V4 2.2 11)",Tram Boulder,33.81678,-116.64791,https://www.mountainproject.com/route/106832311/tram-pass,1.4313637641589874
+Blacktop (V4 3.0 8),Blacktop Boulder,33.81269,-116.64687,https://www.mountainproject.com/route/107901552/blacktop,0.9030899869919435
+"Take a Chance On Me (V1-2 2.1 26) 
  Unnamed Arete (V4 1.0 3) 
- Unnamed Crack (V3- 1.0 2)",Abba Boulder (aka The Cube),33.81441,-116.64924,https://www.mountainproject.com/route/107138914/take-a-chance-on-me
-Aquaman (V4 2.3 18),Aquaman Boulder,33.81706,-116.64867,https://www.mountainproject.com/route/108905822/aquaman
-"Blade Runner (V4 3.0 5) 
- Beige (V2 2.5 2)",The Bermuda Triangle Boulder,33.81723,-116.64991,https://www.mountainproject.com/route/108610346/blade-runner
-Ebonic Woman (V3 2.5 14),Ebonic Woman,33.80918,-116.6474,https://www.mountainproject.com/route/107776196/ebonic-woman
+ Unnamed Crack (V3- 1.0 3)",Abba Boulder (aka The Cube),33.81441,-116.64924,https://www.mountainproject.com/route/107138914/take-a-chance-on-me,1.414973347970818
+"Aquaman (V4 2.3 19) 
+ Aquaman Variation (V4-5 1.0 1)",Aquaman Boulder,33.81706,-116.64867,https://www.mountainproject.com/route/108905822/aquaman,1.2787536009528289
+"Blade Runner (V4 3.0 7) 
+ Beige (V2 2.5 2)",The Bermuda Triangle Boulder,33.81723,-116.64991,https://www.mountainproject.com/route/108610346/blade-runner,0.8450980400142568
+Ebonic Woman (V3 2.5 16),Ebonic Woman,33.80918,-116.6474,https://www.mountainproject.com/route/107776196/ebonic-woman,1.2041199826559248
 "Tree Problem (V0- 2.0 24) 
  The Ledge (V1 2.0 23) 
  Another Tree Problem (V0+ 2.0 15) 
@@ -128,81 +152,93 @@ Ebonic Woman (V3 2.5 14),Ebonic Woman,33.80918,-116.6474,https://www.mountainpro
  Warmer-Upper Right (V0 1.6 7) 
  Warmer-Upper Left (V0 1.7 3) 
  Theatre of the Absurd (V3 1.5 4) 
- The Uninspired (V3 1.3 6)",Warm-Up Boulder,33.81314,-116.64508,https://www.mountainproject.com/route/106506341/tree-problem
-"Iceberg Arete (V2 3.0 3) 
+ The Uninspired (V3 1.3 6)",Warm-Up Boulder,33.81314,-116.64508,https://www.mountainproject.com/route/106506341/tree-problem,1.380211241711606
+"Iceberg Arete (V2 3.0 4) 
  Iceberg Arete Direct (V1 2.2 5) 
- Go with the Floe (V1 1.5 2)",Iceberg 3,33.81446,-116.65321,https://www.mountainproject.com/route/106502161/iceberg-arete
+ Go with the Floe (V1 1.5 2)",Iceberg 3,33.81446,-116.65321,https://www.mountainproject.com/route/106502161/iceberg-arete,0.6020599913279624
 "Crack Line (V2 PG13 2.7 10) 
- Patina Line (V2-3 2.3 12)",El Diablo Boulder,33.81581,-116.64929,https://www.mountainproject.com/route/106832085/crack-line
-Gold Corner (V0 3.0 2),Goldstone,33.81354,-116.64436,https://www.mountainproject.com/route/112048565/gold-corner
+ Patina Line (V2-3 2.3 12)",El Diablo Boulder,33.81581,-116.64929,https://www.mountainproject.com/route/106832085/crack-line,1.0
+"Gold Corner (V0 3.0 2) 
+ Goldie (V2 1.0 1)",Goldstone,33.81354,-116.64436,https://www.mountainproject.com/route/112048565/gold-corner,0.3010299956639812
 "Cracked Patina (V1 PG13 3.0 2) 
  Problem A (V1 2.0 5) 
  Problem A Sit Start (V3 2.0 3) 
  Problem B (V0 2.0 2) 
- Problem C (V-easy 1.5 2)",Young Boulder,33.81836,-116.6492,https://www.mountainproject.com/route/107176780/cracked-patina
-The Mobius (V4 2.8 5),The Mobius,33.81644,-116.65103,https://www.mountainproject.com/route/109089230/the-mobius
+ Problem C (V-easy 1.5 2) 
+ Cracked Egg (V0- PG13 1.0 1)",Young Boulder,33.81836,-116.6492,https://www.mountainproject.com/route/107176780/cracked-patina,0.3010299956639812
+"House Mantle* (V2+ 3.0 2) 
+ House Arête (Unnamed) (V3 1.8 4)",House Boulder,33.81167,-116.64829,https://www.mountainproject.com/route/117863326/house-mantle,0.3010299956639812
+The Mobius (V4 2.8 5),The Mobius,33.81644,-116.65103,https://www.mountainproject.com/route/109089230/the-mobius,0.6989700043360189
 "Time Stands Still (V4 PG13 2.8 5) 
  Somewhere In Time (V0 PG13 1.7 3) 
- Problem A (V2 1.5 2)",Time Boulder,33.81622,-116.64778,https://www.mountainproject.com/route/106922373/time-stands-still
-Unnamed (V3-4 2.5 10),Re-Animation Boulder,33.81228,-116.64355,https://www.mountainproject.com/route/109290718/unnamed
+ Problem A (V2 1.5 2)",Time Boulder,33.81622,-116.64778,https://www.mountainproject.com/route/106922373/time-stands-still,0.6989700043360189
+Unnamed (V3-4 2.5 10),Re-Animation Boulder,33.81228,-116.64355,https://www.mountainproject.com/route/109290718/unnamed,1.0
 "White Stripe (V2 PG13 2.8 4) 
- Serpentine (V0- 2.3 4)",Suicide Boulder,33.80916,-116.64752,https://www.mountainproject.com/route/112882235/white-stripe
-"Bicycles and Tricycles (V4 2.5 6) 
+ Serpentine (V0- 2.3 4)",Suicide Boulder,33.80916,-116.64752,https://www.mountainproject.com/route/112882235/white-stripe,0.6020599913279624
+"Bicycles and Tricycles (V4 2.5 8) 
  Morgan Arete (V1 2.5 4) 
- Variation Morgans Arete (V3- 2.0 2)",Morgan Boulder,33.8128,-116.64705,https://www.mountainproject.com/route/109064455/bicycles-and-tricycles
+ Variation Morgans Arete (V3- 2.0 2)",Morgan Boulder,33.8128,-116.64705,https://www.mountainproject.com/route/109064455/bicycles-and-tricycles,0.9030899869919435
 "Carribean Cocktail (V2 2.8 4) 
  Crossfire (V3- 1.5 13) 
  Poorman's Traverse (V1 1.8 6) 
  Moonwalker (V3 2.0 2) 
+ Hinge (V3 2.0 1) 
  Plastic Man (V1 1.7 6) 
  Poorman's Slashface (V0 1.6 5) 
  Green Lantern (V1+ 1.4 8) 
- Wonder Twin (V-easy 1.3 4)",Dyke Boulder,33.81664,-116.64807,https://www.mountainproject.com/route/108079606/carribean-cocktail
-"Super Chicken (V1 2.6 7) 
- Tom Slick (V2 2.3 6) 
- Unknown (V3 2.1 8)",Dead Tree Boulder,33.81374,-116.64528,https://www.mountainproject.com/route/108227745/super-chicken
+ Wonder Twin (V-easy 1.3 4)",Dyke Boulder,33.81664,-116.64807,https://www.mountainproject.com/route/108079606/carribean-cocktail,0.6020599913279624
 "Problem B (V3 2.4 10) 
  Problem C (V2 2.1 11) 
- Problem A (V3 2.3 3)",Greasefire Boulder,33.81467,-116.6505,https://www.mountainproject.com/route/106488411/problem-b
+ Problem A (V3 2.3 3)",Greasefire Boulder,33.81467,-116.6505,https://www.mountainproject.com/route/106488411/problem-b,1.0
 "Bonn Scott Memorial Face Problem (V3-4 2.1 15) 
- Big Ballz (V3 2.0 2)",Angus Boulder,33.81222,-116.64633,https://www.mountainproject.com/route/108187033/bonn-scott-memorial-face-problem
+ Big Ballz (V3 2.0 2)",Angus Boulder,33.81222,-116.64633,https://www.mountainproject.com/route/108187033/bonn-scott-memorial-face-problem,1.1760912590556813
 "Problem A (V0 2.0 17) 
  Problem B (V1 1.9 17) 
  Problem D (V0+ PG13 1.8 12) 
  Problem C (V3 1.7 10) 
- Problem E (V-easy PG13 1.7 3) 
+ Alphabet Soup (V0- 2.0 1) 
+ Problem E (V-easy PG13 1.7 4) 
  Problem K (V-easy 1.4 7) 
  Problem M (V-easy 1.5 4) 
  Problem F (V-easy 1.4 5) 
  Problem J (V0- 1.2 6) 
  Problem H (V0- 1.2 5) 
  Problem G (V-easy 1.2 5) 
- Problem L (V-easy 1.0 4) 
- Problem I (V-easy 1.0 2)",South Warm-up Boulder,33.81357,-116.64777,https://www.mountainproject.com/route/106516841/problem-a
+ Problem L (V-easy 1.0 5) 
+ Problem I (V-easy 1.0 2) 
+ Problem N (V0+ 1.0 1)",South Warm-up Boulder,33.81357,-116.64777,https://www.mountainproject.com/route/106516841/problem-a,1.2304489213782739
 "Unnamed (V2 2.7 3) 
  Unnamed V4 (V4 1.9 7) 
- Unnamed (V2- 2.0 3) 
+ Unnamed (V2- 2.0 4) 
+ Dyno Problem (V4 2.0 1) 
+ Unnamed (V2- 2.0 1) 
  Flex (V1 1.5 2) 
- Unnamed (V0 1.0 2)",Iceberg 2,33.8145,-116.653,https://www.mountainproject.com/route/117612712/unnamed
-Roof Problem (V1 2.4 7),Rotten Roof Boulder,33.81684,-116.64837,https://www.mountainproject.com/route/111978994/roof-problem
-Hoch Mantel (V4 2.2 11),Seven Boulder,33.81289,-116.64658,https://www.mountainproject.com/route/108004289/hoch-mantel
-Capillary Lockdown (V4 2.5 4),Capillary Lockdown Boulder,33.8127,-116.64701,https://www.mountainproject.com/route/109064465/capillary-lockdown
-"The World's Hardest V2 (V1 1.9 15) 
- Warm up  3 (V0 1.6 8) 
- Warm up  2 (V0- 1.3 6)",Warm up Boulder,33.81414,-116.64885,https://www.mountainproject.com/route/108343869/the-worlds-hardest-v2
-Electric Eye (V3 R 2.4 5),Unison Rock,33.81716,-116.6485,https://www.mountainproject.com/route/107176574/electric-eye
-Left Gold Crack (V3 2.3 6),Gold Crack Boulder/Which Way Jose,33.81446,-116.64983,https://www.mountainproject.com/route/112008925/left-gold-crack
-Shoe Slab (V-easy 2.3 6),Shoe Slab,33.82364,-116.63888,https://www.mountainproject.com/route/106506421/shoe-slab
+ Unnamed (V0 1.0 2)",Iceberg 2,33.8145,-116.653,https://www.mountainproject.com/route/117612712/unnamed,0.47712125471966244
+Roof Problem (V1 2.4 8),Rotten Roof Boulder,33.81684,-116.64837,https://www.mountainproject.com/route/111978994/roof-problem,0.9030899869919435
+Hoch Mantel (V4 2.2 12),Seven Boulder,33.81289,-116.64658,https://www.mountainproject.com/route/108004289/hoch-mantel,1.0791812460476249
+Capillary Lockdown (V4 2.5 4),Capillary Lockdown Boulder,33.8127,-116.64701,https://www.mountainproject.com/route/109064465/capillary-lockdown,0.6020599913279624
+"The World's Hardest V2 (V1 1.9 18) 
+ Warm up  3 (V0 1.6 9) 
+ Warm up  2 (V0- 1.3 7) 
+ Unknown v1 (V1 1.0 1)",Warm up Boulder,33.81414,-116.64885,https://www.mountainproject.com/route/108343869/the-worlds-hardest-v2,1.255272505103306
+Electric Eye (V3 R 2.4 5),Unison Rock,33.81716,-116.6485,https://www.mountainproject.com/route/107176574/electric-eye,0.6989700043360189
+Left Gold Crack (V3 2.3 7),Gold Crack Boulder/Which Way Jose,33.81446,-116.64983,https://www.mountainproject.com/route/112008925/left-gold-crack,0.8450980400142568
 "Creek Dyno (V3 2.5 2) 
+ Liquid Logic (V0 2.0 1) 
  Creekin' (V-easy 1.7 3) 
- Mystery Move (V0 1.0 2)",Creekin' Boulder,33.82361,-116.63494,https://www.mountainproject.com/route/115175145/creek-dyno
-Rock Candy Arete (V0 2.5 2),Rock Candy,33.81494,-116.64624,https://www.mountainproject.com/route/109595272/rock-candy-arete
-Dyno Problem (V4 2.5 2),Dyno Boulder 2,33.81427,-116.64575,https://www.mountainproject.com/route/109083347/dyno-problem
+ Mystery Move (V0 1.0 2)",Creekin' Boulder,33.82361,-116.63494,https://www.mountainproject.com/route/115175145/creek-dyno,0.3010299956639812
+"Rock Candy Arete (V0 2.5 2) 
+ Arete (V3 1.0 1) 
+ Nerds Rope (V1 -1.0 0) 
+ Unnamed .8 (V-easy -1.0 0)",Rock Candy,33.81494,-116.64624,https://www.mountainproject.com/route/109595272/rock-candy-arete,0.3010299956639812
+Dyno Problem (V4 2.5 2),Dyno Boulder 2,33.81427,-116.64575,https://www.mountainproject.com/route/109083347/dyno-problem,0.3010299956639812
 "Snake Eyes (V4 2.1 9) 
- Snake Eyes Direct (V2 1.4 5)",Roll the Bones Boulder,33.8129,-116.6492,https://www.mountainproject.com/route/108167476/snake-eyes
+ Snake Eyes Direct (V2 1.4 5)",Roll the Bones Boulder,33.8129,-116.6492,https://www.mountainproject.com/route/108167476/snake-eyes,0.9542425094393249
 "Unnamed (V3 2.3 3) 
  Fire' Farts (V1 2.0 2) 
+ Missed Opportunity (V4 2.0 1) 
  Mantle Midget (V3 1.8 5) 
+ Don't Rock the Boat (V-easy PG13 2.0 1) 
  Inside Moves (V-easy 1.7 3) 
  One Be Low (V3+ 1.5 2) 
  Floyd E. Queeb (V0 1.5 2) 
@@ -212,56 +248,74 @@ Dyno Problem (V4 2.5 2),Dyno Boulder 2,33.81427,-116.64575,https://www.mountainp
  Dynamo Hum (V0 1.0 2) 
  The 19th Hole (V4 1.0 2) 
  It's Another Route (V0 1.0 2) 
- Play Off (V2 1.0 2)",Boulder,33.81253,-116.64337,https://www.mountainproject.com/route/107818978/unnamed
+ Play Off (V2 1.0 2) 
+ Missing Midget (V4 1.0 1) 
+ Funky Toe'n (V0 1.0 1) 
+ Trilogy (V3 1.0 1)",Boulder,33.81253,-116.64337,https://www.mountainproject.com/route/107818978/unnamed,0.47712125471966244
 "Rob's Seam (V4 2.3 3) 
- Don's Dyno (No. 3) (V4 1.0 2)",Tribe Called Conquest Boulder,33.81336,-116.65018,https://www.mountainproject.com/route/105997092/robs-seam
-Bolo (V4- 2.3 4),JCVD (Jean Claud Van Damme) Boulder,33.8076,-116.64724,https://www.mountainproject.com/route/108865602/bolo
+ Don's Dyno (No. 3) (V4 1.0 2)",Tribe Called Conquest Boulder,33.81336,-116.65018,https://www.mountainproject.com/route/105997092/robs-seam,0.47712125471966244
+Bolo (V4- 2.3 4),JCVD (Jean Claud Van Damme) Boulder,33.8076,-116.64724,https://www.mountainproject.com/route/108865602/bolo,0.6020599913279624
 "Problem A (V3 2.3 4) 
  Problem C (V1 1.7 3) 
- Problem B (V2 1.0 3)",Mandala of Tram,33.8126,-116.6454,https://www.mountainproject.com/route/108195591/problem-a
+ Problem B (V2 1.0 3)",Mandala of Tram,33.8126,-116.6454,https://www.mountainproject.com/route/108195591/problem-a,0.6020599913279624
 "Jet Li (V0 R 2.0 7) 
  Chai Tea (V1+ 1.8 6) 
  Don's Overhang (V4 2.0 2) 
  Kung Fu Grip (V3 1.7 6) 
  Thai Chi (V2 1.4 5) 
  Wu Tang Clan (V0 1.5 2) 
- Kung Fu Panda (V-easy 1.0 2)",The All Day Boulder,34.08345,-118.06679,https://www.mountainproject.com/route/106492567/jet-li
-"Humpin' the Whale (V3 1.9 8) 
- Limbo (V2 1.8 4)",Life/Death Boulders,33.81589,-116.64948,https://www.mountainproject.com/route/112066083/humpin-the-whale
-"Bored Walk (V3 2.0 5) 
- Catwalk (V0 1.5 2)",Boardwalk Boulder - SE Face,33.81743,-116.64865,https://www.mountainproject.com/route/106875729/bored-walk
-"Dike Line (V-easy PG13 2.0 5) 
+ Kung Fu Panda (V-easy 1.0 2) 
+ Problem A (V0 1.0 1)",The All Day Boulder,34.08345,-118.06679,https://www.mountainproject.com/route/106492567/jet-li,0.8450980400142568
+"Humpin' the Whale (V3 1.9 9) 
+ Limbo (V2 1.8 4) 
+ Life Arete (V0 -1.0 0) 
+ Death Arete (V0 -1.0 0)",Life/Death Boulders,33.81589,-116.64948,https://www.mountainproject.com/route/112066083/humpin-the-whale,0.9542425094393249
+"Bored Walk (V3 2.0 6) 
+ Catwalk (V0 1.5 2)",Boardwalk Boulder - SE Face,33.81743,-116.64865,https://www.mountainproject.com/route/106875729/bored-walk,0.7781512503836436
+"Dike Line (V-easy PG13 2.0 6) 
+ Pinch Me (V2 PG13 2.0 1) 
  Dike Line Direct (V1+ PG13 1.8 4) 
- Rotting Cheese (V0 PG13 1.7 3)",Dike Boulder,33.81348,-116.64501,https://www.mountainproject.com/route/106228035/dike-line
-Thin White Duke (V2 2.0 4),Duke Boulder,33.81642,-116.65141,https://www.mountainproject.com/route/112109868/thin-white-duke
-Flaming Lip Traverse (V2 2.0 4),Flaming Lip Boulder,33.81257,-116.64636,https://www.mountainproject.com/route/108068646/flaming-lip-traverse
-Butt Dragon Traverse (V3 2.0 3),Butt Dragon Boulder,33.81207,-116.64888,https://www.mountainproject.com/route/117374358/butt-dragon-traverse
+ Rotting Cheese (V0 PG13 1.7 3)",Dike Boulder,33.81348,-116.64501,https://www.mountainproject.com/route/106228035/dike-line,0.7781512503836436
+Thin White Duke (V2 2.0 4),Duke Boulder,33.81642,-116.65141,https://www.mountainproject.com/route/112109868/thin-white-duke,0.6020599913279624
+"Flaming Lip Traverse (V2 2.0 4) 
+ Flaming Lip (V1 1.0 1)",Flaming Lip Boulder,33.81257,-116.64636,https://www.mountainproject.com/route/108068646/flaming-lip-traverse,0.6020599913279624
+"Butt Dragon Traverse (V3 2.0 3) 
+ Unnamed (V0 2.0 1) 
+ Unnamed Traverse (V1 2.0 1)",Butt Dragon Boulder,33.81207,-116.64888,https://www.mountainproject.com/route/117374358/butt-dragon-traverse,0.47712125471966244
 "E.Z Right (V2 PG13 2.0 3) 
  E.Z Flake (V-easy 1.8 4) 
  E.Z. Left (V1 1.6 5) 
  Unnamed (V-easy 1.5 4) 
- Mantel Problem (V-easy 1.0 2)",E.Z. Boulder,33.8124,-116.6454,https://www.mountainproject.com/route/108195577/ez-right
-Ride the Llama (V3- 2.0 2),Llama Boulder,33.81685,-116.64787,https://www.mountainproject.com/route/117278632/ride-the-llama
+ Mantel Problem (V-easy 1.0 2)",E.Z. Boulder,33.8124,-116.6454,https://www.mountainproject.com/route/108195577/ez-right,0.47712125471966244
+Ride the Llama (V3- 2.0 2),Llama Boulder,33.81685,-116.64787,https://www.mountainproject.com/route/117278632/ride-the-llama,0.3010299956639812
 "The Left Hand of Todd (V3 2.0 2) 
- The Right Hand of Todd (V2+ 1.5 2)",Todd's Hand Boulder,33.81631,-116.65067,https://www.mountainproject.com/route/117283324/the-left-hand-of-todd
-Rubix Cube (V3 2.0 2),Medusa Boulder,33.81837,-116.65055,https://www.mountainproject.com/route/117342940/rubix-cube
-Unnamed (V1 2.0 2),Don's Boulder,33.81195,-116.64778,https://www.mountainproject.com/route/117507819/unnamed
-Gold Rush (V4 2.0 2),Gold Rush Boulder,33.81142,-116.64181,https://www.mountainproject.com/route/113410243/gold-rush
+ The Right Hand of Todd (V2+ 1.5 2)",Todd's Hand Boulder,33.81631,-116.65067,https://www.mountainproject.com/route/117283324/the-left-hand-of-todd,0.3010299956639812
+Rubix Cube (V3 2.0 2),Medusa Boulder,33.81837,-116.65055,https://www.mountainproject.com/route/117342940/rubix-cube,0.3010299956639812
+"Unnamed (V1 2.0 2) 
+ Unnamed (V-easy 1.0 1)",Don's Boulder,33.81195,-116.64778,https://www.mountainproject.com/route/117507819/unnamed,0.3010299956639812
+Gold Rush (V4 2.0 2),Gold Rush Boulder,33.81142,-116.64181,https://www.mountainproject.com/route/113410243/gold-rush,0.3010299956639812
 "Problem B (V0 2.0 2) 
- Problem A (V-easy 1.0 2)",Old Boulder,33.818,-116.64916,https://www.mountainproject.com/route/107176747/problem-b
+ Ruby Slippers (V0+ 2.0 1) 
+ Problem A (V3+ 2.0 1) 
+ Old's Cool (V-easy 2.0 1) 
+ Problem A (V-easy 1.0 2) 
+ Toto or Dorothy? (V3 1.0 1)",Old Boulder,33.818,-116.64916,https://www.mountainproject.com/route/107176747/problem-b,0.3010299956639812
 "Nada III (V3 1.8 5) 
- Unnamed Arete (V3 1.5 2) 
- Campus Problem (V1-2 1.0 5)",Wave Boulders,33.81317,-116.6498,https://www.mountainproject.com/route/111992801/nada-iii
-House Arête (Unnamed) (V3 1.8 4),House Boulder,33.81167,-116.64829,https://www.mountainproject.com/route/113901010/house-arete-unnamed
-"Problem A (V3 1.4 9) 
- Problem A (V0 1.5 2)",Behind The Boardwalk Boulder,33.80951,-116.64037,https://www.mountainproject.com/route/107176605/problem-a
-Rumble in the Bronx (V1 1.5 4),Mortal Kombat Boulder,33.81261,-116.64912,https://www.mountainproject.com/route/108186221/rumble-in-the-bronx
-Electra (V3- 1.5 4),Electra,33.81283,-116.64425,https://www.mountainproject.com/route/108195628/electra
-Unknown (Chuck Norris) (V0-1 1.5 2),Warm Up boulder,33.81231,-116.64888,https://www.mountainproject.com/route/113200812/unknown-chuck-norris
-Chimney (V0+ 1.5 2),Lone Boulder,33.81349,-116.64906,https://www.mountainproject.com/route/111948791/chimney
-Donkey Show (V2- 1.5 2),Donkey boulder,33.82224,-116.64142,https://www.mountainproject.com/route/112115876/donkey-show
-The Maltese Chicken (V2 1.0 5),The Wave Cave,33.80913,-116.64771,https://www.mountainproject.com/route/107776231/the-maltese-chicken
-Bam Bam (V1 1.0 2),Flintstone Boulders,33.81355,-116.64814,https://www.mountainproject.com/route/106824753/bam-bam
-Treebeard (V1 1.0 2),Treebeard Boulder,33.81357,-116.64604,https://www.mountainproject.com/route/106485942/treebeard
-Tangerine (V0 1.0 2),Citrus Boulder,33.81613,-116.64785,https://www.mountainproject.com/route/106922299/tangerine
-Tooth or Dare (V-easy 1.0 2),Tooth Fairy Boulder,33.81422,-116.65105,https://www.mountainproject.com/route/106488379/tooth-or-dare
+ Unnamed Arete (V3 1.5 3) 
+ Campus Problem (V1-2 1.0 5)",Wave Boulders,33.81317,-116.6498,https://www.mountainproject.com/route/111992801/nada-iii,0.6989700043360189
+"Problem A (V3 1.4 10) 
+ Problem A (V0 1.5 2) 
+ Dimit's Problem (V3 1.0 1)",Behind The Boardwalk Boulder,33.80951,-116.64037,https://www.mountainproject.com/route/107176605/problem-a,1.0
+Rumble in the Bronx (V1 1.5 4),Mortal Kombat Boulder,33.81261,-116.64912,https://www.mountainproject.com/route/108186221/rumble-in-the-bronx,0.6020599913279624
+Electra (V3- 1.5 4),Electra,33.81283,-116.64425,https://www.mountainproject.com/route/108195628/electra,0.6020599913279624
+Unknown (Chuck Norris) (V0-1 1.5 2),Warm Up boulder,33.81231,-116.64888,https://www.mountainproject.com/route/113200812/unknown-chuck-norris,0.3010299956639812
+Chimney (V0+ 1.5 2),Lone Boulder,33.81349,-116.64906,https://www.mountainproject.com/route/111948791/chimney,0.3010299956639812
+Donkey Show (V2- 1.5 2),Donkey boulder,33.82224,-116.64142,https://www.mountainproject.com/route/112115876/donkey-show,0.3010299956639812
+The Maltese Chicken (V2 1.0 5),The Wave Cave,33.80913,-116.64771,https://www.mountainproject.com/route/107776231/the-maltese-chicken,0.6989700043360189
+"Bam Bam (V1 1.0 2) 
+ Cosmic Bowling (V4 1.0 2) 
+ Barney Rubble (V0 PG13 1.0 1)",Flintstone Boulders,33.81355,-116.64814,https://www.mountainproject.com/route/106824753/bam-bam,0.3010299956639812
+Treebeard (V1 1.0 2),Treebeard Boulder,33.81357,-116.64604,https://www.mountainproject.com/route/106485942/treebeard,0.3010299956639812
+Tangerine (V0 1.0 2),Citrus Boulder,33.81613,-116.64785,https://www.mountainproject.com/route/106922299/tangerine,0.3010299956639812
+"Tooth or Dare (V-easy 1.0 2) 
+ Tooth Hurty (V-easy 1.0 1)",Tooth Fairy Boulder,33.81422,-116.65105,https://www.mountainproject.com/route/106488379/tooth-or-dare,0.3010299956639812

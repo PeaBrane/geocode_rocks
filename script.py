@@ -68,7 +68,6 @@ def build_df(df: pd.DataFrame,
 
 def process_problems(filename: pd.DataFrame, 
                      vote_threshold=2, 
-                     vote_popular_threshold=20, 
                      boulder=True):
     """processes the problems and group them into boulders/crags based on spatial similarity
 
@@ -83,12 +82,18 @@ def process_problems(filename: pd.DataFrame,
     votes = get_votes(df)
 
     df_processed, votes_most = build_df(df, votes, boulder)
-
-    unpopular_mask = (votes_most >= vote_threshold) & (votes_most < vote_popular_threshold)
-    popular_mask = (votes_most >= vote_popular_threshold)
+    mask = (votes_most >= vote_threshold)
+    df_processed, votes_most = df_processed.loc[mask], votes_most[mask]
     
-    df_processed.loc[unpopular_mask].to_csv(filename[:-4] + '_processed.csv', index=False)
-    df_processed.loc[popular_mask].to_csv(filename[:-4] + '_processed_popular.csv', index=False)
+    votes_most_log = np.log10(votes_most)
+    df_processed['votes_most_log'] = votes_most_log
+    df_processed.iloc[::-1].to_csv(filename[:-4] + '_processed.csv', index=False)
+
+    # unpopular_mask = (votes_most >= vote_threshold) & (votes_most < vote_popular_threshold)
+    # popular_mask = (votes_most >= vote_popular_threshold)
+    
+    # df_processed.loc[unpopular_mask].to_csv(filename[:-4] + '_processed.csv', index=False)
+    # df_processed.loc[popular_mask].to_csv(filename[:-4] + '_processed_popular.csv', index=False)
 
 
 filenames = ['jtree_boulders.csv']
