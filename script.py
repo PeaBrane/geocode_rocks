@@ -1,5 +1,5 @@
 import os
-import pandas
+import pandas as pd
 import numpy as np
 
 from urllib import request
@@ -9,7 +9,8 @@ import re
 from tqdm import tqdm
 
 
-def get_votes(df):
+def get_votes(df: pd.DataFrame):
+    
     votes = []
     for index in tqdm(range(len(df))):
         url = df['URL'].iloc[index]
@@ -26,11 +27,15 @@ def get_votes(df):
     return np.array(votes)
 
 
-def build_df(df, votes, boulder=True):
+def build_df(df: pd.DataFrame, 
+             votes: np.array,
+             boulder=True, 
+             tol=1e-7):
+    
     latitudes, longitudes = df['Area Latitude'].to_numpy(), df['Area Longitude'].to_numpy()
     coords = np.stack([latitudes, longitudes], axis=-1)
     distances = coords[np.newaxis, ...] - coords[:, np.newaxis]
-    sames = (np.absolute(distances) <= 1e-6).all(-1)
+    sames = (np.absolute(distances) <= tol).all(-1)
 
     indices = []
     for index, same in enumerate(sames):
@@ -55,33 +60,35 @@ def build_df(df, votes, boulder=True):
     latitudes = df['Area Latitude'].iloc[first_index]
     longitudes = df['Area Longitude'].iloc[first_index]
     urls = df['URL'].iloc[first_index]
+    
+    votes_most = votes[first_index]
 
-    return pandas.DataFrame(data={'Route': routes, 'Location': locations, 'Latitude': latitudes, 'Longitude': longitudes, 'URL': urls})
+    return pd.DataFrame(data={'Route': routes, 'Location': locations, 'Latitude': latitudes, 'Longitude': longitudes, 'URL': urls}), votes_most
 
 
-def process_problems(filename, vote_threshold=2, vote_split=10, boulder=True):
+def process_problems(filename: pd.DataFrame, 
+                     vote_threshold=2, 
+                     vote_popular_threshold=20, 
+                     boulder=True):
     """processes the problems and group them into boulders/crags based on spatial similarity
 
     Args:
         filename (str): the file name of the csv file to be processed (exported from mountain project)
         vote_threshold (int, optional): problems whose vote count below this threshold will be ignored. Defaults to 2.
-        vote_split (int, optional): problems whose vote count above this threshold will be treated as popular problems. Defaults to 10.
+        vote_split (int, optional): problems whose vote count above this threshold will be treated as popular problems. Defaults to 20.
         boulder (bool, optional): whether the problem is a boulder of roped problem. Defaults to True.
     """
-    df = pandas.read_csv(filename)
+    
+    df = pd.read_csv(filename)
     votes = get_votes(df)
 
-    df_popular = df.iloc[votes >= vote_split]
-    votes_popular = votes[votes >= vote_split]
+    df_processed, votes_most = build_df(df, votes, boulder)
 
-    df = df.iloc[(votes >= vote_threshold) & (votes < vote_split)]
-    votes = votes[(votes >= vote_threshold) & (votes < vote_split)]
-
-    df_processed = build_df(df, votes, boulder)
-    df_processed.to_csv(filename[:-4] + '_processed.csv', index=False)
-
-    df_processed = build_df(df_popular, votes_popular, boulder)
-    df_processed.to_csv(filename[:-4] + '_processed_popular.csv', index=False)
+    unpopular_mask = (votes_most >= vote_threshold) & (votes_most < vote_popular_threshold)
+    popular_mask = (votes_most >= vote_popular_threshold)
+    
+    df_processed.loc[unpopular_mask].to_csv(filename[:-4] + '_processed.csv', index=False)
+    df_processed.loc[popular_mask].to_csv(filename[:-4] + '_processed_popular.csv', index=False)
 
 
 filenames = ['jtree_boulders.csv']
