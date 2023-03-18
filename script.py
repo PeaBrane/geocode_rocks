@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import numpy as np
+from time import sleep
 
 from urllib import request
 from bs4 import BeautifulSoup
@@ -9,19 +10,29 @@ import re
 from rich.progress import track
 
 
+def get_vote(url):
+    response = request.urlopen(url)
+    soup = BeautifulSoup(response.read(), 'html.parser')
+
+    results = soup.body.find_all(string=re.compile('.*{0}.*'.format('Avg')), recursive=True)[0]
+    start_index = results.find('from') + 5
+    end_index = results.find('votes') - 5
+
+    vote = int(results[start_index:end_index])
+    return vote
+
+
 def get_votes(df: pd.DataFrame):
-    
     votes = []
     for index in track(range(len(df))):
         url = df['URL'].iloc[index]
-        response = request.urlopen(url)
-        soup = BeautifulSoup(response.read(), 'html.parser')
+        
+        try:
+            vote = get_vote(url)
+        except:
+            print('retrying url...')
+            sleep(3)
 
-        results = soup.body.find_all(string=re.compile('.*{0}.*'.format('Avg')), recursive=True)[0]
-        start_index = results.find('from') + 5
-        end_index = results.find('votes') - 5
-
-        vote = int(results[start_index:end_index])
         votes.append(vote)
 
     return np.array(votes)
@@ -31,7 +42,6 @@ def build_df(df: pd.DataFrame,
              votes: np.array,
              boulder=True, 
              tol=1e-7):
-    
     latitudes, longitudes = df['Area Latitude'].to_numpy(), df['Area Longitude'].to_numpy()
     coords = np.stack([latitudes, longitudes], axis=-1)
     distances = coords[np.newaxis, ...] - coords[:, np.newaxis]
@@ -76,8 +86,7 @@ def process_problems(filename: pd.DataFrame,
         vote_threshold (int, optional): problems whose vote count below this threshold will be ignored. Defaults to 2.
         vote_split (int, optional): problems whose vote count above this threshold will be treated as popular problems. Defaults to 20.
         boulder (bool, optional): whether the problem is a boulder of roped problem. Defaults to True.
-    """
-    
+    """   
     df = pd.read_csv(filename)
     votes = get_votes(df)
 
@@ -96,7 +105,7 @@ def process_problems(filename: pd.DataFrame,
     # df_processed.loc[popular_mask].to_csv(filename[:-4] + '_processed_popular.csv', index=False)
 
 
-filenames = ['jtree_boulders.csv']
+filenames = ['colorado_boulders.csv', 'arizona_boulders.csv', 'new_mexico_boulders.csv']
 filenames = [os.path.join('data', filename) for filename in filenames]
 for filename in filenames:
     process_problems(filename)
