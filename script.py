@@ -1,48 +1,18 @@
 import os
-import pandas as pd
+import argparse
+from pathlib import Path
+
 import numpy as np
-from time import sleep
+import pandas as pd
 
-from urllib import request
-from bs4 import BeautifulSoup
-
-import re
-from rich.progress import track
+from rusty_scrapper import fetch_votes_py
 
 
-def get_vote(url):
-    response = request.urlopen(url)
-    soup = BeautifulSoup(response.read(), 'html.parser')
-
-    results = soup.body.find_all(string=re.compile('.*{0}.*'.format('Avg')), recursive=True)[0]
-    start_index = results.find('from') + 5
-    end_index = results.find('votes') - 5
-
-    vote = int(results[start_index:end_index])
-    return vote
-
-
-def get_votes(df: pd.DataFrame):
-    votes = []
-    for index in track(range(len(df))):
-        url = df['URL'].iloc[index]
-        
-        try:
-            vote = get_vote(url)
-        except:
-            print('retrying url...')
-            sleep(3)
-
-        votes.append(vote)
-
-    return np.array(votes)
-
-
-def build_df(df: pd.DataFrame, 
-             votes: np.array,
-             boulder=True, 
-             tol=1e-7):
-    latitudes, longitudes = df['Area Latitude'].to_numpy(), df['Area Longitude'].to_numpy()
+def build_df(df: pd.DataFrame, votes: np.array, boulder=True, tol=1e-7):
+    latitudes, longitudes = (
+        df["Area Latitude"].to_numpy(),
+        df["Area Longitude"].to_numpy(),
+    )
     coords = np.stack([latitudes, longitudes], axis=-1)
     distances = coords[np.newaxis, ...] - coords[:, np.newaxis]
     sames = (np.absolute(distances) <= tol).all(-1)
@@ -57,28 +27,41 @@ def build_df(df: pd.DataFrame,
         route = []
         for i in index:
             if boulder:
-                route.append(f"{df['Route'].iloc[i]} ({df['Rating'].iloc[i]} {df['Avg Stars'].iloc[i]} {votes[i]})")
+                route.append(
+                    f"{df['Route'].iloc[i]} ({df['Rating'].iloc[i]} {df['Avg Stars'].iloc[i]} {votes[i]})"
+                )
             else:
-                route.append(f"{df['Route'].iloc[i]} ({df['Rating'].iloc[i]} {df['Avg Stars'].iloc[i]} {votes[i]}) ({df['Route Type'].iloc[i]} {df['Pitches'].iloc[i]} {df['Length'].iloc[i]})")
-        routes.append(' \n '.join(route))
+                route.append(
+                    f"{df['Route'].iloc[i]} ({df['Rating'].iloc[i]} {df['Avg Stars'].iloc[i]} {votes[i]}) ({df['Route Type'].iloc[i]} {df['Pitches'].iloc[i]} {df['Length'].iloc[i]})"
+                )
+        routes.append(" \n ".join(route))
 
     first_index = [index[0] for index in indices]
 
-    locations = df['Location'].iloc[first_index]
-    locations = [location.split('>')[0][:-1] for location in locations]
+    locations = df["Location"].iloc[first_index]
+    locations = [location.split(">")[0][:-1] for location in locations]
 
-    latitudes = df['Area Latitude'].iloc[first_index]
-    longitudes = df['Area Longitude'].iloc[first_index]
-    urls = df['URL'].iloc[first_index]
-    
+    latitudes = df["Area Latitude"].iloc[first_index]
+    longitudes = df["Area Longitude"].iloc[first_index]
+    urls = df["URL"].iloc[first_index]
+
     votes_most = votes[first_index]
 
-    return pd.DataFrame(data={'Route': routes, 'Location': locations, 'Latitude': latitudes, 'Longitude': longitudes, 'URL': urls}), votes_most
+    return (
+        pd.DataFrame(
+            data={
+                "Route": routes,
+                "Location": locations,
+                "Latitude": latitudes,
+                "Longitude": longitudes,
+                "URL": urls,
+            }
+        ),
+        votes_most,
+    )
 
 
-def process_problems(filename: pd.DataFrame, 
-                     vote_threshold=2, 
-                     boulder=True):
+def process_problems(filename: pd.DataFrame, vote_threshold=2, boulder=True):
     """processes the problems and group them into boulders/crags based on spatial similarity
 
     Args:
@@ -86,26 +69,32 @@ def process_problems(filename: pd.DataFrame,
         vote_threshold (int, optional): problems whose vote count below this threshold will be ignored. Defaults to 2.
         vote_split (int, optional): problems whose vote count above this threshold will be treated as popular problems. Defaults to 20.
         boulder (bool, optional): whether the problem is a boulder of roped problem. Defaults to True.
-    """   
+    """
     df = pd.read_csv(filename)
-    votes = get_votes(df)
+    votes = fetch_votes_py(df["URL"].tolist())
 
     df_processed, votes_most = build_df(df, votes, boulder)
-    mask = (votes_most >= vote_threshold)
+    mask = votes_most >= vote_threshold
     df_processed, votes_most = df_processed.loc[mask], votes_most[mask]
-    
+
     votes_most_log = np.log10(votes_most)
-    df_processed['votes_most_log'] = votes_most_log
-    df_processed.iloc[::-1].to_csv(filename[:-4] + '_processed.csv', index=False)
+    df_processed["votes_most_log"] = votes_most_log
+    df_processed.iloc[::-1].to_csv(filename[:-4] + "_processed.csv", index=False)
 
     # unpopular_mask = (votes_most >= vote_threshold) & (votes_most < vote_popular_threshold)
     # popular_mask = (votes_most >= vote_popular_threshold)
-    
+
     # df_processed.loc[unpopular_mask].to_csv(filename[:-4] + '_processed.csv', index=False)
     # df_processed.loc[popular_mask].to_csv(filename[:-4] + '_processed_popular.csv', index=False)
 
 
-filenames = ['colorado_boulders.csv', 'arizona_boulders.csv', 'new_mexico_boulders.csv']
-filenames = [os.path.join('data', filename) for filename in filenames]
-for filename in filenames:
-    process_problems(filename)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Process Mountain Project data to group problems by location.')
+    parser.add_argument('filename', type=str, help='CSV file to process (exported from Mountain Project)')
+    
+    args = parser.parse_args()
+    # Get the directory where the script is located
+    script_dir = Path(__file__).parent.absolute()
+    # Construct absolute path for the input file
+    filename = script_dir / "data" / args.filename
+    process_problems(str(filename))
