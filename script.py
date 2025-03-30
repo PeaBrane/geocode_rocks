@@ -1,6 +1,6 @@
-import os
 import argparse
 from pathlib import Path
+from typing import List
 
 import numpy as np
 import pandas as pd
@@ -8,7 +8,22 @@ import pandas as pd
 from rusty_scrapper import fetch_votes_py
 
 
-def build_df(df: pd.DataFrame, votes: np.array, boulder=True, tol=1e-7):
+def build_df(df: pd.DataFrame, votes: List[int], boulder=True, tol=1e-7):
+    """Constructs a processed DataFrame that groups climbing routes by their geographic location.
+    
+    Args:
+        df (pd.DataFrame): The input DataFrame containing Mountain Project route data
+        votes (List[int]): List of vote counts for each route
+        boulder (bool, optional): Whether to format output for boulder problems (True) or roped climbs (False). Defaults to True.
+        tol (float, optional): Tolerance threshold for considering coordinates as the same location. Defaults to 1e-7.
+        
+    Returns:
+        tuple: A tuple containing:
+            - pd.DataFrame: The processed DataFrame with routes grouped by location
+            - numpy.ndarray: Array of vote counts for the most popular route at each location
+    """
+    votes = np.array(votes)
+    
     latitudes, longitudes = (
         df["Area Latitude"].to_numpy(),
         df["Area Longitude"].to_numpy(),
@@ -62,13 +77,12 @@ def build_df(df: pd.DataFrame, votes: np.array, boulder=True, tol=1e-7):
 
 
 def process_problems(filename: pd.DataFrame, vote_threshold=2, boulder=True):
-    """processes the problems and group them into boulders/crags based on spatial similarity
+    """Processes climbing problems and groups them into boulders/crags based on spatial similarity.
 
     Args:
-        filename (str): the file name of the csv file to be processed (exported from mountain project)
-        vote_threshold (int, optional): problems whose vote count below this threshold will be ignored. Defaults to 2.
-        vote_split (int, optional): problems whose vote count above this threshold will be treated as popular problems. Defaults to 20.
-        boulder (bool, optional): whether the problem is a boulder of roped problem. Defaults to True.
+        filename (str): Path to the CSV file to be processed (exported from Mountain Project)
+        vote_threshold (int, optional): Problems with vote counts below this threshold will be ignored. Defaults to 2.
+        boulder (bool, optional): Whether to process boulder problems (True) or roped climbs (False). Defaults to True.
     """
     df = pd.read_csv(filename)
     votes = fetch_votes_py(df["URL"].tolist())
@@ -80,12 +94,6 @@ def process_problems(filename: pd.DataFrame, vote_threshold=2, boulder=True):
     votes_most_log = np.log10(votes_most)
     df_processed["votes_most_log"] = votes_most_log
     df_processed.iloc[::-1].to_csv(filename[:-4] + "_processed.csv", index=False)
-
-    # unpopular_mask = (votes_most >= vote_threshold) & (votes_most < vote_popular_threshold)
-    # popular_mask = (votes_most >= vote_popular_threshold)
-
-    # df_processed.loc[unpopular_mask].to_csv(filename[:-4] + '_processed.csv', index=False)
-    # df_processed.loc[popular_mask].to_csv(filename[:-4] + '_processed_popular.csv', index=False)
 
 
 if __name__ == "__main__":

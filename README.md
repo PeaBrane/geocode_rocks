@@ -1,6 +1,23 @@
-This short python script processes the data exported (in csv format) from Mountain Project, such that all the problems are grouped into boulders/crags (based on their GPS coordinate similarities).
+## Usage
 
-This is for the purpose of uploading the processed data into mapping applications such as Google Maps, such that each displayed pin corresponds to a boulder/crag, with the routes/grades/stars listed as description for easier organization.
+### Exporting Data from Mountain Project
+1. Log in to your Mountain Project account
+2. Navigate to the area you want to export (e.g., a specific climbing area or region)
+3. Look for the "Export to CSV" option (usually found in the route/problem listing pages)
+4. Download the CSV file and place it in the `data` directory of this project
+
+### Processing and Visualization
+1. Run the script using the command mentioned above: `make run ARGS="your_exported_file.csv"`
+2. Find the processed file (with `_processed.csv` suffix) in the same `data` directory
+3. To visualize on Google Maps:
+   - Go to [Google My Maps](https://www.google.com/maps/d/)
+   - Create a new map
+   - Click "Import" and upload your processed CSV file
+   - When prompted, select the columns for location data (use the "Latitude" and "Longitude" columns)
+   - Configure your map appearance as desired - each pin will now represent a boulder/crag with all routes listed in the description
+   - The processed CSV includes a `votes_most_log` column containing the logarithmic vote count of the most popular route at each location, which you can use to create a color-coded map based on popularity
+
+The processed CSV is structured specifically for easy integration with mapping tools, grouping routes by location and including relevant details like grades, star ratings, and vote counts.
 
 ## Prerequisites
 
@@ -25,7 +42,7 @@ The build command performs the following steps:
 ### Run
 To run the script:
 ```bash
-make run filename=arizona_boulders.csv
+make run filename="arizona_boulders.csv"
 ```
 
 This will process the input CSV file (in this example, `data/arizona_boulders.csv`) and generate a processed version with the suffix `_processed.csv` in the same directory (e.g., `data/arizona_boulders_processed.csv`). The script groups climbing problems by their GPS coordinates and includes vote counts from Mountain Project.
